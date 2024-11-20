@@ -12,7 +12,7 @@ body {
 
 .nav-head {
   width: 100%;
-  background-image: images/BH-location.jpg;
+  background-image: url('images/BH-location.jpg');
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
   position: fixed;
   top: 0;
