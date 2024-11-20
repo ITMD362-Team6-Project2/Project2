@@ -4,32 +4,17 @@ body {
   text-align: center;
 }
 
-#wrapper{
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .nav-head {
   width: 100%;
-  background-image: url('images/BH-location.jpg');
+  background-image: url('../images/BH-location.jpg');
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
   position: fixed;
   top: 0;
   left: 0;
 }
 
-header h1 {
-  font-family: "Libre Barcode 39 Text", Arial, system-ui;
-  font-size: 4rem;
-  color: #000000;
-  font-weight: bold;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
 #logo {
-  width: 300px;
+  width: 400px;
   height: auto;
   margin: 0 auto;
   display: block;
@@ -56,15 +41,14 @@ nav ul li a{
   font-weight: normal;
   text-decoration: none;
   text-align: center;
-  width: 100px;
-  padding: 10px 0px 8px 0px;
-  border-radius: 4px; 
+  width: 200px;
+  padding: 10px 1px 10px 0px;
+  border-radius: 5px; 
   display: inline-block;   
 }
 
 nav ul li a:hover{
-    background-color: rgb(55 57 177);
-    color: rgb(153 153 153);
-    border-radius: 20px;    
+  background-color: rgb(55 57 177);
+  color: rgb(153 153 153);
+  border-radius: 20px;    
 }
-  
