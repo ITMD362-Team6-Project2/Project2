@@ -52,3 +52,81 @@ nav ul li a:hover{
   color: rgb(153 153 153);
   border-radius: 20px;    
 }
+
+/* About Page CSS */
+#maincontent{
+  margin-top: 430px;
+  padding: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+#maincontent h1, #maincontent h2 {
+  color: #004b87;
+  margin-bottom: 10px;
+}
+
+#intro, #mission, #history, #leadership {
+  margin-bottom: 30px;
+}
+
+.timeline {
+  border-left: 3px solid #004b87;
+  padding-left: 20px;
+}
+
+.timeline .event {
+  margin-bottom: 15px;
+}
+
+.timeline .event h3 {
+  color: #004b87;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.profile h3 {
+  margin: 0 0 5px;
+  color: #004b87;
+}
+
+footer {
+  background: #004b87;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.social-media {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media li {
+  margin: 0 10px;
+}
+
