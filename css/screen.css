@@ -74,6 +74,7 @@ nav ul li a:hover{
 #maincontent h1, #maincontent h2 {
   color: #004b87;
   margin-bottom: 10px;
+  font-size: 20px;
 }
 
 #intro, #mission, #history, #leadership {
