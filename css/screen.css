@@ -107,9 +107,9 @@ nav ul li a:hover{
 }
 
 .profile h3 {
-  margin-right: 5px;
   font-size: 20px;
-  margin: 0 0 5px;
+  margin: 0 0 10px;
+  margin-right: 10px;
   color: #004b87;
 }
 
