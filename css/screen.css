@@ -95,7 +95,7 @@ nav ul li a:hover{
 }
 
 .timeline .event:hover {
-  background-color: rgb(0, 45, 230 / 10%);
+  background-color: rgb(0 45 230 / 10%);
 }
 
 .timeline .event {
