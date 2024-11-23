@@ -110,23 +110,23 @@ nav ul li a:hover{
 }
 
 .event {
-  border-left: 4px solid #0046ad; /* Adds a vertical line to the left */
+  border-left: 4px solid #0046ad; 
   padding-left: 20px;
-  background-color: #ffffff; /* Ensure each event has a solid background */
+  background-color: #ffffff;
   padding: 10px;
-  border-radius: 5px; /* Optional: rounded corners */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional: slight shadow */
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
 }
 
 .event h3 {
   font-size: 1.2em;
-  color: #0046ad; /* Matches brand colors */
+  color: #0046ad; 
   margin-bottom: 5px;
 }
 
 .event p {
   font-size: 1em;
-  color: #333; /* Neutral for better readability */
+  color: #333; 
 }
 
 .event:before {
@@ -136,7 +136,7 @@ nav ul li a:hover{
   top: 5px;
   width: 12px;
   height: 12px;
-  background-color: #0046ad; /* Matches the border color */
+  background-color: #0046ad;
   border-radius: 50%;
 }
 
