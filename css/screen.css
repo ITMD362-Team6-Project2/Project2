@@ -180,16 +180,11 @@ footer a {
   justify-content: center;
 }
 
-.social-media li a {
-  color: #ffffff;
-  font-size: 24px;
-  transition: color 0.3s;
+.social-media img{
+  width: 40px;
+  height: 40px;
 }
 
-.social-media li a:hover {
-  color: #0073e6;
-}
-
-.fa-rotate-by {
- transform: none !important; /* Default to no rotation/Fixes rotation issue with css validation */
+.social-media img:hover {
+  transform: scale(1.2); 
 }
