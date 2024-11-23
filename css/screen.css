@@ -189,3 +189,7 @@ footer a {
 .social-media li a:hover {
   color: #0073e6;
 }
+
+.fa-rotate-by {
+  transform: rotate(0deg); /* Default to no rotation/Fixes rotation issue with css validation */
+}
