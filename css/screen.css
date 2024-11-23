@@ -191,5 +191,5 @@ footer a {
 }
 
 .fa-rotate-by {
-  transform: rotate(0deg); /* Default to no rotation/Fixes rotation issue with css validation */
+ transform: none !important; /* Default to no rotation/Fixes rotation issue with css validation */
 }
