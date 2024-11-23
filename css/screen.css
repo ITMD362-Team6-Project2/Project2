@@ -3,9 +3,7 @@ body {
   padding: 45px;
   text-align: center;
   background-image: url('../images/BH-location.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 2000px;
 }
 
 .nav-head {
@@ -110,23 +108,23 @@ nav ul li a:hover{
 }
 
 .event {
-  border-left: 4px solid #0046ad; 
+  border-left: 4px solid #0046ad; /* Adds a vertical line to the left */
   padding-left: 20px;
-  background-color: #ffffff;
+  background-color: #ffffff; /* Ensure each event has a solid background */
   padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+  border-radius: 5px; /* Optional: rounded corners */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional: slight shadow */
 }
 
 .event h3 {
   font-size: 1.2em;
-  color: #0046ad; 
+  color: #0046ad; /* Matches brand colors */
   margin-bottom: 5px;
 }
 
 .event p {
   font-size: 1em;
-  color: #333; 
+  color: #333; /* Neutral for better readability */
 }
 
 .event:before {
@@ -136,7 +134,7 @@ nav ul li a:hover{
   top: 5px;
   width: 12px;
   height: 12px;
-  background-color: #0046ad;
+  background-color: #0046ad; /* Matches the border color */
   border-radius: 50%;
 }
 
