@@ -190,3 +190,18 @@ footer a {
 .social-media img:hover {
   transform: scale(1.2); 
 }
+
+table {
+  border-collapse: separate;
+  border-spacing: 20px 10px;
+  width: 100%;
+}
+
+td {
+  padding: 10px 20px;
+  text-align: left; 
+}
+
+td:first-child {
+  font-weight: bold; 
+}
