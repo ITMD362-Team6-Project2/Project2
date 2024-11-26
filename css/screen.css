@@ -118,6 +118,11 @@ nav ul li a:hover{
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional: slight shadow */
 }
 
+h2 {
+  text-align: center;
+}
+
+
 .event h3 {
   font-size: 1.2em;
   color: #0046ad; /* Matches brand colors */
