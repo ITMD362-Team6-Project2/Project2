@@ -67,8 +67,8 @@ nav ul li a:hover{
   padding: 20px;
   max-width: 1200px;
   margin-left: auto;
+  text-align: center;
   margin-right: auto;
-  text-align: left;
   background-color: #f7f5f5;
   border: 1px solid #ddd;
 }
@@ -117,6 +117,13 @@ nav ul li a:hover{
   border-radius: 5px; /* Optional: rounded corners */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional: slight shadow */
 }
+
+#maincontent h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 
 .event h3 {
   font-size: 1.2em;
@@ -189,4 +196,15 @@ footer a {
 
 .social-media img:hover {
   transform: scale(1.2); 
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 20px 10px;
+  width: 100%;
+}
+
+td {
+  padding: 10px 20px;
+  text-align: left; 
 }
