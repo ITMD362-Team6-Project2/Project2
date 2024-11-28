@@ -28,7 +28,7 @@ body {
   margin-left: 20px;
 }
 
-nav ul{
+nav ul {
   list-style: none;
   height: 0px;
   display: flex;
@@ -36,12 +36,12 @@ nav ul{
   justify-content: center;  
 }
 
-nav ul li{
+nav ul li {
   display: inline-block;
   padding: 10px 30px;
 }
 
-nav ul li a{
+nav ul li a {
   margin: 0 15px;
   margin-bottom: 100px;
   color: rgb(255, 255, 255);
@@ -55,14 +55,13 @@ nav ul li a{
   display: inline-block;   
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   background-color: rgb(55 57 177);
   color: rgb(153 153 153);
   border-radius: 20px;    
 }
 
-/* About Page CSS */
-#maincontent{
+#maincontent {
   margin-top: 180px;
   padding: 20px;
   max-width: 1200px;
@@ -123,7 +122,6 @@ nav ul li a:hover{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 
 .event h3 {
   font-size: 1.2em;
@@ -189,7 +187,7 @@ footer a {
   justify-content: center;
 }
 
-.social-media img{
+.social-media img {
   width: 40px;
   height: 40px;
 }
@@ -207,4 +205,116 @@ table {
 td {
   padding: 10px 20px;
   text-align: left; 
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .nav-head {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #logo {
+    width: 150px;
+    margin-left: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    padding: 5px 0;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 8px 10px;
+    width: auto;
+  }
+
+  #maincontent {
+    margin-top: 120px;
+    padding: 15px;
+  }
+
+  #maincontent h1, #maincontent h2 {
+    font-size: 18px;
+  }
+
+  .timeline {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .timeline .event h3 {
+    font-size: 1em;
+  }
+
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile img {
+    margin: 0 auto 10px;
+  }
+
+  footer {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+
+  .social-media img {
+    width: 30px;
+    height: 30px;
+  }
+
+  table {
+    border-spacing: 10px 5px;
+  }
+
+  td {
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  #maincontent {
+    margin-top: 100px;
+    padding: 10px;
+  }
+
+  .timeline {
+    padding: 5px;
+  }
+
+  .timeline .event h3 {
+    font-size: 0.9em;
+  }
+
+  footer {
+    padding: 10px 5px;
+    font-size: 12px;
+  }
+
+  .social-media img {
+    width: 25px;
+    height: 25px;
+  }
 }
