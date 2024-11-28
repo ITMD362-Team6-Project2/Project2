@@ -49,32 +49,35 @@ form {
   margin: 0 auto 10px auto;
 }
 
+/* Navigation Menu */
 nav ul {
   list-style: none;
   display: flex;
-  flex-direction: column; /* Stacked on mobile */
-  align-items: center; /* Center aligned buttons */
-  margin: 0;
-  padding: 0;
-  gap: 10px; /* Adjust spacing between buttons */
+  align-items: center;
+  justify-content: center;  
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block;
 }
 
 nav ul li a {
-  font-size: 14px; /* Reduced font size for mobile */
-  padding: 8px 12px; /* Smaller padding for compact look */
   color: rgb(255, 255, 255);
   background-color: rgb(0 0 129);
+  font-weight: normal;
   text-decoration: none;
-  border-radius: 5px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px; 
   display: inline-block;
-  width: auto;
 }
 
 nav ul li a:hover {
   background-color: rgb(55 57 177);
-  color: rgb(200, 200, 200);
-  border-radius: 10px;
-}  
+  color: rgb(153 153 153);
+  border-radius: 20px;    
 }
 
 /* About Page CSS */
