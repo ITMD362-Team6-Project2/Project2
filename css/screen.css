@@ -4,8 +4,15 @@ body {
   text-align: center;
   background-image: url('../images/BH-location.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; /* Ensures background covers the screen */
   background-position: center;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    background-size: contain; /* Makes background image fit on smaller screens */
+  }
 }
 
 .nav-head {
@@ -20,7 +27,7 @@ body {
 }
 
 #logo {
-  width: 150px; /* Smaller logo for mobile screens */
+  width: 150px;
   height: auto;
   display: block;
   margin: 10px auto;
@@ -30,7 +37,7 @@ nav ul {
   list-style: none;
   padding: 0;
   display: flex;
-  flex-direction: column; /* Stack items vertically on mobile */
+  flex-direction: column;
   gap: 10px;
   align-items: center;
 }
@@ -52,7 +59,7 @@ nav ul li a:hover {
 }
 
 #maincontent {
-  margin-top: 100px; /* Space for fixed header */
+  margin-top: 100px;
   padding: 15px;
   background-color: #f7f5f5;
   border: 1px solid #ddd;
@@ -68,7 +75,7 @@ nav ul li a:hover {
 .timeline {
   border-left: 3px solid #004b87;
   padding-left: 20px;
-  display: block; /* Full width on mobile */
+  display: block;
   gap: 20px;
   margin: 20px auto;
   background-color: #f9f9f9;
@@ -78,12 +85,12 @@ nav ul li a:hover {
 }
 
 .timeline .event {
-  border-left: 4px solid #0046ad; /* Adds a vertical line to the left */
+  border-left: 4px solid #0046ad;
   padding-left: 20px;
-  background-color: #ffffff; /* Ensure each event has a solid background */
+  background-color: #ffffff;
   padding: 10px;
-  border-radius: 5px; /* Optional: rounded corners */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional: slight shadow */
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
   margin-bottom: 15px;
 }
 
@@ -93,13 +100,13 @@ nav ul li a:hover {
 
 .timeline .event h3 {
   font-size: 1.2rem;
-  color: #0046ad; /* Matches brand colors */
+  color: #0046ad;
   margin-bottom: 5px;
 }
 
 .timeline .event p {
   font-size: 1rem;
-  color: #333; /* Neutral for better readability */
+  color: #333;
 }
 
 footer {
@@ -126,10 +133,24 @@ footer a {
 .social-media img {
   width: 40px;
   height: 40px;
+  transition: transform 0.3s ease;
 }
 
 .social-media img:hover {
   transform: scale(1.2); 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 600px) {
+  img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
 
 table {
@@ -146,7 +167,7 @@ td {
 /* Tablet and larger screens */
 @media (min-width: 600px) {
   nav ul {
-    flex-direction: row; /* Horizontal menu on larger screens */
+    flex-direction: row;
     justify-content: center;
     gap: 20px;
   }
@@ -163,7 +184,7 @@ td {
   }
 
   .timeline {
-    display: flex; /* Align events horizontally for larger screens */
+    display: flex;
     flex-wrap: wrap;
   }
 }
