@@ -226,7 +226,7 @@ td {
   }
 
   nav ul {
-    flex-direction: column; /* Stack nav items vertically */
+	  
     padding: 0;
     margin: 0 auto; /* Center the nav */
   }
