@@ -8,16 +8,13 @@ body {
   background-position: center;
 }
 
-.nav-head {
-  width: 100%;
-  background: linear-gradient(0deg, rgb(255 255 255) 0%, rgb(131 156 217) 100%);
-  background-size: cover;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-  position: fixed;
-  top: 0;
-  left: 0;
-  align-items: center;
-}
+@media screen and (max-width: 768px) {
+  .nav-head {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px;
+    height: auto; /* Allow dynamic height based on content */
+  }
 
 #logo {
   width: 200px;
@@ -28,33 +25,22 @@ body {
   margin-left: 20px;
 }
 
-nav ul {
-  list-style: none;
-  height: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;  
-}
-
+ nav ul {
+    display: flex;
+    flex-direction: column; /* Stack nav items vertically */
+    padding: 0;
+    margin: 0 auto; /* Center the nav */
+  }
 nav ul li {
-  display: inline-block;
-  padding: 10px 30px;
-}
+    margin-bottom: 10px; /* Add spacing between buttons */
+  }
 
 nav ul li a {
-  margin: 0 15px;
-  margin-bottom: 100px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(0 0 129);
-  font-weight: normal;
-  text-decoration: none;
-  text-align: center;
-  width: 200px;
-  padding: 10px 1px 10px 0px;
-  border-radius: 5px; 
-  display: inline-block;   
-}
-
+    font-size: 14px; /* Adjust font size for better fit */
+    width: 100%; /* Make buttons stretch full width */
+    text-align: center; /* Center text in buttons */
+    padding: 8px 5px; /* Reduce padding for compactness */
+  }
 nav ul li a:hover {
   background-color: rgb(55 57 177);
   color: rgb(153 153 153);
@@ -218,9 +204,9 @@ td {
     padding: 10px;
   }
 
-  #logo {
-    width: 150px;
-    margin-left: 0;
+#logo {
+    width: 150px; /* Adjust logo size */
+    margin: 0 auto; /* Center align */
   }
 
   nav ul {
