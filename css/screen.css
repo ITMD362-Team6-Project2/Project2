@@ -1,3 +1,4 @@
+/* Base styles */
 body {
   margin: 0;
   padding: 45px;
@@ -10,10 +11,8 @@ body {
 
 .nav-head {
   width: 100%;
-  background: linear-gradient(0deg, rgb(255 255 255) 0%, rgb(131 156 217) 100%);
   background-size: cover;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-  position: fixed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   top: 0;
   left: 0;
   align-items: center;
@@ -28,7 +27,7 @@ body {
   margin-left: 20px;
 }
 
-nav ul{
+nav ul {
   list-style: none;
   height: 0px;
   display: flex;
@@ -36,12 +35,12 @@ nav ul{
   justify-content: center;  
 }
 
-nav ul li{
+nav ul li {
   display: inline-block;
   padding: 10px 30px;
 }
 
-nav ul li a{
+nav ul li a {
   margin: 0 15px;
   margin-bottom: 100px;
   color: rgb(255, 255, 255);
@@ -55,14 +54,13 @@ nav ul li a{
   display: inline-block;   
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   background-color: rgb(55 57 177);
   color: rgb(153 153 153);
   border-radius: 20px;    
 }
 
-/* About Page CSS */
-#maincontent{
+#maincontent {
   margin-top: 180px;
   padding: 20px;
   max-width: 1200px;
@@ -94,7 +92,7 @@ nav ul li a:hover{
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .timeline .event:hover {
@@ -123,7 +121,6 @@ nav ul li a:hover{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 
 .event h3 {
   font-size: 1.2em;
@@ -189,7 +186,7 @@ footer a {
   justify-content: center;
 }
 
-.social-media img{
+.social-media img {
   width: 40px;
   height: 40px;
 }
@@ -207,4 +204,73 @@ table {
 td {
   padding: 10px 20px;
   text-align: left; 
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .nav-head {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px;
+    height: auto; /* Allow dynamic height based on content */
+  }
+
+  #logo {
+    width: 150px; /* Adjust logo size */
+    margin: 0 auto; /* Center align */
+  }
+
+  nav ul {
+	  
+    padding: 0;
+    margin: 0 auto; /* Center the nav */
+  }
+
+  nav ul li {
+    margin-bottom: 10px; /* Add spacing between buttons */
+  }
+
+  nav ul li a {
+    font-size: 14px; /* Adjust font size for better fit */
+    width: 100%; /* Make buttons stretch full width */
+    text-align: center; /* Center text in buttons */
+    padding: 8px 5px; /* Reduce padding for compactness */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  #maincontent {
+    margin-top: 100px;
+    padding: 10px;
+  }
+
+  .timeline {
+    padding: 5px;
+  }
+
+  .timeline .event h3 {
+    font-size: 0.9em;
+  }
+
+  footer {
+    padding: 10px 5px;
+    font-size: 12px;
+  }
+
+  .social-media img {
+    width: 25px;
+    height: 25px;
+  }
 }
