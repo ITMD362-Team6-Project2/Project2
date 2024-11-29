@@ -4,9 +4,7 @@ body {
   padding: 45px;
   text-align: center;
   background-image: url('../images/BH-location.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 .nav-head {
