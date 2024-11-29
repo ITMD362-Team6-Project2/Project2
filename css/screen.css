@@ -1,3 +1,4 @@
+/* Base styles */
 body {
   margin: 0;
   padding: 45px;
@@ -8,13 +9,16 @@ body {
   background-position: center;
 }
 
-@media screen and (max-width: 768px) {
-  .nav-head {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    padding: 10px;
-    height: auto; /* Allow dynamic height based on content */
-  }
+.nav-head {
+  width: 100%;
+  background: linear-gradient(0deg, rgb(255 255 255) 0%, rgb(131 156 217) 100%);
+  background-size: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+}
 
 #logo {
   width: 200px;
@@ -25,22 +29,33 @@ body {
   margin-left: 20px;
 }
 
- nav ul {
-    display: flex;
-    flex-direction: column; /* Stack nav items vertically */
-    padding: 0;
-    margin: 0 auto; /* Center the nav */
-  }
+nav ul {
+  list-style: none;
+  height: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
 nav ul li {
-    margin-bottom: 10px; /* Add spacing between buttons */
-  }
+  display: inline-block;
+  padding: 10px 30px;
+}
 
 nav ul li a {
-    font-size: 14px; /* Adjust font size for better fit */
-    width: 100%; /* Make buttons stretch full width */
-    text-align: center; /* Center text in buttons */
-    padding: 8px 5px; /* Reduce padding for compactness */
-  }
+  margin: 0 15px;
+  margin-bottom: 100px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0 0 129);
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  padding: 10px 1px 10px 0px;
+  border-radius: 5px; 
+  display: inline-block;   
+}
+
 nav ul li a:hover {
   background-color: rgb(55 57 177);
   color: rgb(153 153 153);
@@ -79,7 +94,7 @@ nav ul li a:hover {
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .timeline .event:hover {
@@ -200,74 +215,31 @@ td {
   }
 
   .nav-head {
-    flex-direction: column;
+    flex-direction: column; /* Stack items vertically */
     padding: 10px;
+    height: auto; /* Allow dynamic height based on content */
   }
 
-#logo {
+  #logo {
     width: 150px; /* Adjust logo size */
     margin: 0 auto; /* Center align */
   }
 
   nav ul {
-    flex-direction: column;
-    height: auto;
-    padding: 10px 0;
+    flex-direction: column; /* Stack nav items vertically */
+    padding: 0;
+    margin: 0 auto; /* Center the nav */
   }
 
   nav ul li {
-    padding: 5px 0;
+    margin-bottom: 10px; /* Add spacing between buttons */
   }
 
   nav ul li a {
-    font-size: 14px;
-    padding: 8px 10px;
-    width: auto;
-  }
-
-  #maincontent {
-    margin-top: 120px;
-    padding: 15px;
-  }
-
-  #maincontent h1, #maincontent h2 {
-    font-size: 18px;
-  }
-
-  .timeline {
-    padding: 10px;
-    gap: 15px;
-  }
-
-  .timeline .event h3 {
-    font-size: 1em;
-  }
-
-  .profile {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .profile img {
-    margin: 0 auto 10px;
-  }
-
-  footer {
-    padding: 15px 10px;
-    font-size: 14px;
-  }
-
-  .social-media img {
-    width: 30px;
-    height: 30px;
-  }
-
-  table {
-    border-spacing: 10px 5px;
-  }
-
-  td {
-    padding: 5px 10px;
+    font-size: 14px; /* Adjust font size for better fit */
+    width: 100%; /* Make buttons stretch full width */
+    text-align: center; /* Center text in buttons */
+    padding: 8px 5px; /* Reduce padding for compactness */
   }
 }
 
