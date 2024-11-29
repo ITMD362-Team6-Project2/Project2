@@ -256,4 +256,8 @@ td {
     width: 25px;
     height: 25px;
   }
+  
+  .logo {
+    width: 120px;
+  }
 }
