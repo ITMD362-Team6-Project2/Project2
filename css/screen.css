@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
   margin: 0;
   padding: 45px;
@@ -10,10 +11,8 @@ body {
 
 .nav-head {
   width: 100%;
-  background: linear-gradient(0deg, rgb(255 255 255) 0%, rgb(131 156 217) 100%);
   background-size: cover;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-  position: fixed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   top: 0;
   left: 0;
   align-items: center;
@@ -22,55 +21,50 @@ body {
 #logo {
   width: 200px;
   height: auto;
-  margin: 0 auto;
+  margin: 0 auto 10px 20px;
   display: block;
-  margin-bottom: 10px;
-  margin-left: 20px;
 }
 
-nav ul{
+nav ul {
   list-style: none;
-  height: 0px;
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
-nav ul li{
+nav ul li {
   display: inline-block;
   padding: 10px 30px;
 }
 
-nav ul li a{
-  margin: 0 15px;
-  margin-bottom: 100px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(0 0 129);
+nav ul li a {
+  color: #fff;
+  background-color: #000081;
   font-weight: normal;
   text-decoration: none;
   text-align: center;
   width: 200px;
-  padding: 10px 1px 10px 0px;
-  border-radius: 5px; 
-  display: inline-block;   
+  padding: 10px 0;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 15px 100px;
 }
 
-nav ul li a:hover{
-  background-color: rgb(55 57 177);
-  color: rgb(153 153 153);
-  border-radius: 20px;    
+nav ul li a:hover {
+  background-color: #3739b1;
+  color: #999;
+  border-radius: 20px;
 }
 
-/* About Page CSS */
-#maincontent{
-  margin-top: 180px;
+#maincontent {
+  margin: 180px auto 0;
   padding: 20px;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
   background-color: #f7f5f5;
   border: 1px solid #ddd;
+  text-align: center;
 }
 
 #maincontent h1, #maincontent h2 {
@@ -94,49 +88,41 @@ nav ul li a:hover{
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.timeline .event:hover {
-  background-color: rgb(0 45 230 / 10%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .timeline .event {
   margin-bottom: 15px;
+  padding: 10px;
+  border-left: 4px solid #0046ad;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.timeline .event:hover {
+  background-color: rgba(0, 45, 230, 0.1);
 }
 
 .timeline .event h3 {
-  color: #004b87;
-}
-
-.event {
-  border-left: 4px solid #0046ad; /* Adds a vertical line to the left */
-  padding-left: 20px;
-  background-color: #ffffff; /* Ensure each event has a solid background */
-  padding: 10px;
-  border-radius: 5px; /* Optional: rounded corners */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional: slight shadow */
-}
-
-.event h3 {
+  color: #0046ad;
   font-size: 1.2em;
-  color: #0046ad; /* Matches brand colors */
   margin-bottom: 5px;
 }
 
-.event p {
+.timeline .event p {
   font-size: 1em;
-  color: #333; /* Neutral for better readability */
+  color: #333;
 }
 
-.event:before {
+.timeline .event:before {
   content: '';
   position: absolute;
   left: -8px;
   top: 5px;
   width: 12px;
   height: 12px;
-  background-color: #0046ad; /* Matches the border color */
+  background-color: #0046ad;
   border-radius: 50%;
 }
 
@@ -155,8 +141,7 @@ nav ul li a:hover{
 
 .profile h3 {
   font-size: 20px;
-  margin: 0 0 10px;
-  margin-right: 10px;
+  margin: 0 10px 10px 0;
   color: #004b87;
 }
 
@@ -176,17 +161,97 @@ footer a {
 .social-media {
   list-style: none;
   display: flex;
-  padding: 0;
-  gap: 10px;
-  margin: 15px 0;
   justify-content: center;
+  gap: 10px;
+  padding: 0;
+  margin: 15px 0;
 }
 
-.social-media img{
+.social-media img {
   width: 40px;
   height: 40px;
+  transition: transform 0.2s ease-in-out;
 }
 
 .social-media img:hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 20px 10px;
+  width: 100%;
+}
+
+td {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .nav-head {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  #logo {
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    padding: 8px 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  #maincontent {
+    margin-top: 100px;
+    padding: 10px;
+  }
+
+  .timeline {
+    padding: 5px;
+  }
+
+  .timeline .event h3 {
+    font-size: 0.9em;
+  }
+
+  footer {
+    padding: 10px 5px;
+    font-size: 12px;
+  }
+
+  .social-media img {
+    width: 25px;
+    height: 25px;
+  }
 }
